@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+      background-color: #f2f2f2;
+      height: 100vh;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .containerccc {
+      max-width: 1440px;
+      margin: auto;
+    }
+
+    .containerccc>p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .topupperrr>div:nth-of-type(1) {
+      background-color: #b69763;
+    }
+
+    .topup {
+      padding: 10px 0px;
+    }
+
+    .secondnav {
+      background-color: black;
+    }
+
+    .forblack {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .form-control::placeholder {
+      color: #595956;
+      font-weight: 300;
+    }
+
+    .thirdnav {
+      background-color: #0c0b0b;
+    }
+
+    .thirdnav>div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0px;
+    }
+
+    .thirdnav>div>p:hover {
+      border-bottom: 2px solid #ea1164;
+      transition: border-bottom 1s;
+    }
+
+    .fourthdiv {
+      margin: 80px 0px 26px 0px;
+      background: linear-gradient(80deg, #262626 5%, transparent 25%),
+        linear-gradient(-45deg, #181717 25%, transparent 25%),
+        linear-gradient(45deg,  #181717 25%, transparent 25%),
+        linear-gradient(-45deg, #181717 25%, transparent 25%);
+      background-size: 200px 120px;
+      background-position: 0 0, 10px 10px, 10px 10px, 0 0;
+      background-color: #242424;
+    }
+
+    .bordercr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .bordercr>div:nth-of-type(1) {
+      
+        height: 2px;
+        width: 50px;
+          background-color: #cd2968;
+      
+      margin-top: -10px;
+    }
+
+    .bordercr>div:nth-of-type(2) {
+        height: 2px;
+        width: 50px;
+        background-color: #cd2968;
+      margin-top: -10px;
+    }
+
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      gap: 20px;
+    }
+
+    .btn-primary {
+      width: 200px;
+      background-color: black;
+      border: none;
+    }
+
+    .card-text {
+      text-align: center;
+      font-weight: 400;
+      font-size: 15px;
+      color: gray;
+    }
+
+    .h5text {
+      text-align: center;
+      margin-top: -15px;
+      font-weight: 600;
+    }
+
+    .card {
+      width: 276px;
+      height: 438px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topupperrr">
+    <div>
+      <div class="containerccc topup d-flex justify-content-center align-items-center">
+        <p>Use code: First20 to get 20% OFF on your first order!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="secondnav">
+    <div class="containerccc forblack">
+      <div>
+        <img height="32px" width="256"
+          src="https://in.sugarcosmetics.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNonCVLogoDesktop.86874a45.png&w=256&q=100"
+          alt="">
+      </div>
+      <div style=" padding-top: 10px; display: flex; width: 700px;" class="input-group mb-3">
+        <input style="padding: 10px 24px; background-color: #212121;" type="text" class="form-control" placeholder = 'Try "Liquid Lipstick" ' aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+            viewBox="0 0 512 512">
+            <path fill="#000000"
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+          </svg>Search</span>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5"
+          viewBox="0 0 448 512">
+          <path fill="#ffffff"
+            d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+        </svg>
+        <p style="padding-top: 10px; color: white; display: inline;">Login/Register</p>
+      </div>
+      <div style="display: flex; gap: 20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="25" width="20"
+          viewBox="0 0 512 512">
+          <path fill="#fafafa"
+            d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="25" width="20"
+          viewBox="0 0 448 512">
+          <path fill="#fafafa"
+            d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="25" width="20"
+          viewBox="0 0 384 512">
+          <path fill="#ffffff"
+            d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="thirdnav">
+    <div style="color: white;" class="containerccc">
+      <p>SUGAR PLAY</p>
+      <p>LIPS</p>
+      <p>EYES</p>
+      <p>FACE</p>
+      <p>NAILS</p>
+      <p>SKINCARE</p>
+      <p>ACCESSORIES</p>
+      <p>GIFTING</p>
+      <p>BESTSELLERS</p>
+      <p>NEW LAUNCHES</p>
+      <p>OFFERS</p>
+      <p>BLOG</p>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F292fec64-46f0-4e9b-8464-9b26febca090.gif&w=1920&q=100"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fc495a6ee-7ce2-4a9e-880a-67d31e3fe1ad.jpg&w=1920&q=100"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fed482272-4a25-46a7-8708-2106336325db.gif&w=1920&q=100"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fc0c7c945-e73c-47f0-ae66-87d28753c0dd.jpg&w=1920&q=100"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fc2045ec3-838d-4805-a5f5-b04adb7caca6.jpg&w=1920&q=100"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F83e3bb50-a5e1-4457-a629-ee95c3ab5894.jpg&w=1920&q=100"
+          class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="fourthdiv">
+    <div style=" color: white; border: 0.1px solid transparent;" class="containerccc">
+      <div class="bordercr">
+        <div></div>
+        <h4>BESTSELLERS</h4>
+        <div></div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2FTransferproofMatteLipstickSetof2-WBG01KV.jpg%3Fv%3D1713542649&w=256&q=75"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title" style="padding: 0px 35px; font-weight: 400; font-size: 14px; text-align: center;">
+              Matte Attack Transferproof Lipstick</h6>
+            <p class="card-text">15 shades</p>
+            <h5 class="h5text">₹749</h5>
+            <div style="display: flex; gap: 10px;">
+              <div style=" border: 1px solid; padding: 7px 10px; border-radius: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                  viewBox="0 0 512 512">
+                  <path
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                </svg>
+              </div>
+
+              <a href="#" class="btn btn-primary">SELECT SHADE</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="card" style="width: 276px;">
+          <img style="height: 272px;"
+            src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMatteAttackTransferproofLipstickPDPimagesFinal1.jpg%3Fv%3D1714511152&w=256&q=75"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title" style="padding: 0px 35px; font-weight: 400; font-size: 14px; text-align: center; ">
+              Mousse Muse Lip Cream</h6>
+            <p class="card-text" style="margin-top: 23px;">12 shades</p>
+            <h5 class="h5text">₹555</h5>
+            <div style="display: flex; gap: 10px;">
+              <div style=" border: 1px solid; padding: 7px 10px; border-radius: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                  viewBox="0 0 512 512">
+                  <path
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                </svg>
+              </div>
+
+              <a href="#" class="btn btn-primary">SELECT SHADE</a>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="card" style="width: 276px;">
+          <img height="62%"
+            src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F464576762-launch_sugar-la-la-love-18hr-liquid-lipstick-wbg-powered-by-images_01.jpg%3Fv%3D1688227587&w=256&q=75"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title" style="padding: 0px 35px; font-weight: 400; font-size: 14px; text-align: center;">
+
+              Limited-Edition La La Love 18HR Liquid Lipstick</h6>
+            <p class="card-text">4 shades</p>
+            <h5 class="h5text">₹279</h5>
+            <div style="display: flex; gap: 10px;">
+              <div style=" border: 1px solid; padding: 7px 10px; border-radius: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                  viewBox="0 0 512 512">
+                  <path
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                </svg>
+              </div>
+
+              <a href="#" class="btn btn-primary">SELECT SHADE</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card" style="width: 276px;">
+            <img
+              src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FDreamCoverSpf15MattifyingCompactPDPImagesparent1stcard.jpg%3Fv%3D1680623338&w=256&q=75"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title" style="padding: 0px 35px; font-weight: 400; font-size: 14px; text-align: center;">
+                Dream Cover SPF15 Mattifying Compact</h6>
+              <p class="card-text">4 shades</p>
+              <h5 class="h5text">₹549</h5>
+              <div style="display: flex; gap: 10px;">
+                <div style=" border: 1px solid; padding: 7px 10px; border-radius: 10px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                    viewBox="0 0 512 512">
+                    <path
+                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                  </svg>
+                </div>
+  
+                <a href="#" class="btn btn-primary">SELECT SHADE</a>
+              </div>
+  
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="margin-top: 80px; margin-bottom: 35px;">
+    <div  class="bordercr">
+      <div></div>
+      <h4>HOT DEALS</h4>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="sixthdiv" >
+    <div class="containerccc" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+      <img height="289px" style=" margin-bottom: 50px; border-radius: 10px;" src="https://d32baadbbpueqt.cloudfront.net/Homepage/9b92bb73-edd9-4b40-84be-c0a3f9c32d7c.gif" alt="">
+      <img height="289px" style=" margin-bottom: 50px; border-radius: 10px;" src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/a376e8d4-5e02-4dfb-b649-3dc4807499c5.jpg&w=1080&q=75" alt="">
+      <img height="289px" style=" margin-bottom: 50px; border-radius: 10px;" src="https://d32baadbbpueqt.cloudfront.net/Homepage/062d29c6-31e6-4bee-861a-3b8f47c2bab4.gif" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
